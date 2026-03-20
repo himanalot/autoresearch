@@ -1,18 +1,14 @@
-# autoresearch
+# manifest
 
 This is an experiment to have the LLM do its own research.
 
 **Simplicity criterion**: All else being equal, simpler is better. A small improvement that adds ugly complexity is not worth it. Conversely, removing something and getting equal or better results is a great outcome — that's a simplification win. When evaluating whether to keep a change, weigh the complexity cost against the improvement magnitude. A 0.001 val_bpb improvement that adds 20 lines of hacky code? Probably not worth it. A 0.001 val_bpb improvement from deleting code? Definitely keep. An improvement of ~0 but much simpler code? Keep.
 
-## Output format
-
-Once the script finishes it prints a summary like this:
-
 ## Logging results
 
 When an experiment is done, log it to `results.tsv` (tab-separated, NOT comma-separated — commas break in descriptions).
 
-The TSV has a header row and 5 columns:
+The TSV should have a header row and 5 columns:
 
 ```
 wandb_name   val_bpb	artifact_size	status	description   
@@ -23,6 +19,12 @@ wandb_name   val_bpb	artifact_size	status	description
 3. artifact size, in MB
 4. status: `keep`, `discard`, or `crash`
 5. short text description of what this experiment tried
+
+## Research & Planning
+
+1. You should regularly check PRs for high performance and methodologies that are promising for us. If you find promising leads, add them to the RESEARCH_PLAN.md to experiment with.
+2. As experiments run, you should do research with Nia. Pay special attention to groundbreaking new papers, as well as posts on X - high-level AI researchers often post on there.
+3. **IMPORTANT:** Make sure you update the RESEARCH_PLAN.md document if you have any new experiments you've decided to run. Also update the file afterward.
 
 ## The experiment loop
 
