@@ -25,6 +25,7 @@ wandb_name  val_bpb	artifact_size	status	description
 1. You should regularly check PRs for high performance and methodologies that are promising for us. If you find promising leads, add them to the RESEARCH_PLAN.md to experiment with.
 2. As experiments run, you should do research with Nia. Pay special attention to groundbreaking new papers, as well as posts on X - high-level AI researchers often post on there.
 3. **IMPORTANT:** Make sure you update the RESEARCH_PLAN.md document if you have any new experiments you've decided to run. Also update the file afterward.
+4. Make sure you always follow what you have entered in RESEARCH_PLAN.md
 
 ## The experiment loop
 
