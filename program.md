@@ -11,7 +11,7 @@ When an experiment is done, log it to `results.tsv` (tab-separated, NOT comma-se
 The TSV should have a header row and 5 columns:
 
 ```
-wandb_name   val_bpb	artifact_size	status	description   
+wandb_name  val_bpb	artifact_size	status	description   
 ```
 
 1. wandb run name
